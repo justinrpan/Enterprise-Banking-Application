@@ -34,19 +34,20 @@ export class LoginComponent implements OnInit {
     setTimeout(()=>this.switchScreen(this.authR),900);
   }
 
-  switchScreen(authRes:AuthReponse){
+  switchScreen(authRes:AuthReponse) {
     console.log(authRes);
-    if(authRes){
+    if (authRes) {
       localStorage.setItem("auth",  JSON.stringify(authRes));
       this.isLoggedIn=true;
     }
 
   }
-  setNeed(){
-    if(this.need){
+  setNeed() {
+    if (this.need) {
       this.need=false;
-    }else{
+    } else {
       this.need = true;
     }
   }
+
 }
