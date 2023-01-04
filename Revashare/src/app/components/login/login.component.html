@@ -1,22 +1,21 @@
-<div class="col-md-12" *ngIf="!isLoggedIn">
-  <h1 id="loginheader">Login to Your Account</h1>
-    <div class="brainer-container">
+<div class="form" *ngIf="!isLoggedIn">
       <form *ngIf="!isLoggedIn" name="form" (ngSubmit)="f.form.valid && onSubmit();" #f="ngForm" novalidate>
-        <div class="form-group">
+        <div class="form-header">
+          <p>Welcome<br>Back</p>
+        </div>
+        <div class="email">
           <label for="email">Email: </label>
-          <input type="text" class="form-control" name="email" [(ngModel)]="form.email" required #email="ngModel"/>
+          <input type="text" class="form-control" name="email" placeholder="Enter your email" [(ngModel)]="form.email" required #email="ngModel"/>
         </div>
-        <div class="form-group">
+        <div class="password">
           <label for="password">Password: </label>
-          <input type="password" class="form-control" name="password" [(ngModel)]="form.password" required #password="ngModel"/>
+          <input type="password" class="form-control" name="password" placeholder="Enter your password" [(ngModel)]="form.password" required #password="ngModel"/>
         </div>
-        <div class="form-group">
-          <button routerLink="/dashboard" class="btn btn-primary btn-block">
-            Login
-          </button>
-          <button routerLink="/forgotPassword">Forgot your password?</button>
+        <div class="loginbutton">
+          <button id="loginbutton" routerLink="/dashboard">Login</button> 
         </div>
+
+        <button routerLink="/forgotPassword">Forgot your password?</button>
+        <button routerLink="/register">Register</button>
       </form>
-    </div>
-    <button routerLink="/register">Register</button>
 </div>
