@@ -1,34 +1,39 @@
-<div class="registerForm">
-    <h1 class="registerHeader">Register an Account</h1>
-    <div class="registerBody" *ngIf="!user">
-        <form [formGroup]="registerForm" (ngSubmit)="registerSubmitted()">
-            <div class="form-group">
-                <label for="firstName">First Name: </label>
-                <input id="firstName" type="text" formControlName="firstName" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="lastName">Last Name: </label>
-                <input id ="lastName" type="text" formControlName="lastName" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="Email">Email: </label>
-                <input id="email" type="email" formControlName="email" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="Password">Password: </label>
-                <input id="password" type="password" formControlName="password" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="PhoneNumber">Phone Number: </label>
-                <input id="phonenumber" type="number" formControlName="phoneNum" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <button type="submit">Register</button>
-            </div>
-            <div class="form-group">
-                <button routerLink="/login">Cancel</button>
-            </div>
-        </form>
-    </div>
-    <div *ngIf="user" (show)="changeNeed()"> User Created</div>
+<div class="registerform" *ngIf="!user">
+    <form *ngIf="!user" [formGroup]="registerForm" (ngSubmit)="registerSubmitted()">
+        <div class="form-header">
+            <p>Create An<br>Account</p>
+        </div>
+        <div class="firstName">
+            <label for="firstName">First Name: </label>
+            <input id="firstName" type="text" formControlName="firstName" class="form-control" 
+            placeholder="Enter your first name" required>
+        </div>
+        <div class="lastName">
+            <label for="lastName">Last Name: </label>
+            <input id ="lastName" type="text" formControlName="lastName" class="form-control" 
+            placeholder="Enter your last name" required>
+        </div>
+        <div class="email">
+            <label for="email">Email: </label>
+            <input id="email" type="email" formControlName="email" class="form-control" 
+            placeholder="Enter your email" required>
+        </div>
+        <div class="password">
+            <label for="password">Password: </label>
+            <input id="password" type="password" formControlName="password" class="form-control" 
+            placeholder="Enter your password" required>
+        </div>
+        <div class="phoneNumber">
+            <label for="phoneNumber">Phone Number: </label>
+            <input id="phoneNumber" type="number" formControlName="phoneNumber" class="form-control" 
+            placeholder="Enter your phone number"required>
+        </div>
+        <div class="registerbutton">
+            <button id="registerbutton" routerLink="/login">Register</button>
+        </div>
+    </form>
 </div>
+
+<p id="tagline">Let's get<br>started.</p>
+<a routerLink="/login" id="login">Log In</a>
+<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Humaaans-sitting-1.svg/1200px-Humaaans-sitting-1.svg.png' >

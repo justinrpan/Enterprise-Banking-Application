@@ -1,4 +1,4 @@
-.form {
+.loginform {
     border: 3px solid #0040ff;
     border-radius: 35px;
     background-color: white;
@@ -64,8 +64,7 @@ label {
     top: 20px;
     right: 225px;
     text-decoration: none;
-    color: black;
-    
+    color: black; 
 }
 
 #signup:visited {

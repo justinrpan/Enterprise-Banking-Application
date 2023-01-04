@@ -1,20 +1,103 @@
-.registerForm {
-    text-align:center;
+.registerform {
+    border: 3px solid #0040ff;
+    border-radius: 35px;
+    background-color: white;
+    width: 450px;
+    height: 550px;
+    position: absolute;
+    top: 320px;
+    right: 145px;
 }
 
 #registerbutton {
-    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 35px;
+    background-color: red;
+    width: 130px;
+    height: 20px;
+    font-family: Syne;
+    line-height: 0;
 }
 
-#cancelbutton {
-    margin-bottom: 30px;
-    margin-top: 30px;
+.registerbutton {
+    text-align: center;
 }
 
 label {
-    font-size: 25px;
+    font-size: 22px;
 }
 
-h1 {
-    font-size: 45px;
+.form-header {
+    font-size: 30px;
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom: -10px;
+}
+
+.firstName {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.lastName {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.email {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.password {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.phoneNumber {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.form-control {
+    display: block;
+    margin-top: 8px;
+    border-radius: 35px;
+    background-color: #e7e6e7;
+    border: 2px solid black;
+    height: 20px;
+    width: 350px;
+}
+
+::placeholder {
+    text-align: center;
+    font-family: Syne;
+}
+
+#login {
+    position: absolute;
+    top: 20px;
+    right: 225px;
+    text-decoration: none;
+    color: black; 
+}
+
+#login:visited {
+    color: inherit;
+}
+
+#tagline {
+    color: red;
+    position: absolute;
+    top: 120px;
+    right: 245px;
+    font-size: 40px;
+    text-align: center;
+}
+
+img {
+    width: 33%;
+    height: 33%;
+    margin-top: 140px;
+    margin-left: 72px;
 }
