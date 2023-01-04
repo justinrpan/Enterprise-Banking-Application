@@ -1,0 +1,100 @@
+.loginform {
+    border: 3px solid #0040ff;
+    border-radius: 35px;
+    background-color: white;
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    top: 320px;
+    right: 145px;
+}
+
+#loginbutton {
+    border: 2px solid black;
+    border-radius: 35px;
+    background-color: red;
+    width: 130px;
+    height: 20px;
+    font-family: Syne;
+    line-height: 0;
+}
+
+.loginbutton {
+    text-align: center;
+}
+
+label {
+    font-size: 22px;
+}
+
+.form-header {
+    font-size: 30px;
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom: -10px;
+}
+
+.email {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.password {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.form-control {
+    display: block;
+    margin-top: 8px;
+    border-radius: 35px;
+    background-color: #e7e6e7;
+    border: 2px solid black;
+    height: 20px;
+    width: 350px;
+}
+
+::placeholder {
+    text-align: center;
+    font-family: Syne;
+}
+
+#signup {
+    position: absolute;
+    top: 20px;
+    right: 225px;
+    text-decoration: none;
+    color: black; 
+}
+
+#signup:visited {
+    color: inherit;
+}
+
+#forgotpassword {
+    position: absolute;
+    top: 20px;
+    right: 350px;
+    text-decoration: none;
+    color: black;
+}
+
+#forgotpassword:visited {
+    color: inherit;
+}
+
+#tagline {
+    color: red;
+    position: absolute;
+    top: 120px;
+    right: 140px;
+    font-size: 40px;
+    text-align: center;
+}
+
+img {
+    width: 33%;
+    height: 33%;
+    margin-top: 140px;
+    margin-left: 72px;
+}
