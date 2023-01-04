@@ -9,7 +9,7 @@ import { TokenStorageService } from './services/token-storage.service';
 
 export class AppComponent {
   title = 'Revashare';
-  
+
   toggleDarkTheme(): void {
     document.body.classList.toggle('dark-theme');
   }

@@ -6,7 +6,7 @@
     height: 300px;
     position: absolute;
     top: 320px;
-    right: 120px;
+    right: 145px;
 }
 
 #loginbutton {
@@ -57,4 +57,45 @@ label {
 ::placeholder {
     text-align: center;
     font-family: Syne;
+}
+
+#signup {
+    position: absolute;
+    top: 20px;
+    right: 225px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+#signup:visited {
+    color: inherit;
+}
+
+#forgotpassword {
+    position: absolute;
+    top: 20px;
+    right: 350px;
+    text-decoration: none;
+    color: black;
+}
+
+#forgotpassword:visited {
+    color: inherit;
+}
+
+#tagline {
+    color: red;
+    position: absolute;
+    top: 120px;
+    right: 140px;
+    font-size: 40px;
+    text-align: center;
+}
+
+img {
+    width: 33%;
+    height: 33%;
+    margin-top: 140px;
+    margin-left: 72px;
 }

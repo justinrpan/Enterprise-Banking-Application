@@ -1,2 +1,2 @@
-<button (click)="toggleDarkTheme()" id="darkmodebutton">Dark Mode</button>
+<a href='#' id="darkmodebutton" (click)="$event.preventDefault(); toggleDarkTheme()">Dark Mode</a>
 <router-outlet></router-outlet>
