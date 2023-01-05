@@ -1,7 +1,6 @@
 <div class="dashboardcontainer" *ngIf="fetchedAccounts">
     <h1 id="dashboardheader">Dashboard</h1>
-    <ul>
-        <li *ngFor="let account of fetchedAccounts" (click)="onSelect(account)">
+        <div *ngFor="let account of fetchedAccounts" (click)="onSelect(account)">
             <button type="button" *ngIf="account.type==='Checking'">
                 <span class="badge">{{account.id}}</span>
                 {{account.type}} : {{account.totalValue | currency}} 
@@ -10,8 +9,7 @@
                 <span class="badge">{{account.id}}</span>
                 {{account.type}}  : {{account.totalValue | currency}}
             </button>
-        </li>
-    </ul>
+        </div>
 </div>
 
 <button id="loadaccounts" type="button" (click)="getAccounts()">Load Accounts</button>
@@ -25,6 +23,7 @@
         <button id="createaccount" type="submit" [disabled]="!createNew.form.valid">+</button>
     </form>
 </div>
+
 
 <app-transfer-money [accounts]="fetchedAccounts" [accountIds]="fetchedAccIds" [acc]="selectedAccount"></app-transfer-money>
 <app-statements [acc]="selectedAccount" [allAccounts]="fetchedAllAccIds"></app-statements>

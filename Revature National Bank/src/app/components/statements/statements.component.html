@@ -1,5 +1,5 @@
-    <div>
-        <h2>Transaction Statements</h2>
+    <div class="transactions">
+        <h2>Transactions</h2>
         <button type="button" (click)="getTransactions()">Load Transactions</button>
         <li *ngFor="let transaction of transactions">
             <p> From: {{transaction.from.id}} </p>
