@@ -28,6 +28,8 @@ export class UserProfileComponent implements OnInit {
       this.userService.saveUser(formdata).subscribe(
         user => 
           this.newUserInfo = user);
+    
+    document.getElementById('changessaved!').innerHTML = 'Changes Saved!';
   }
 
 }

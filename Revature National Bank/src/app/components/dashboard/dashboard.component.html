@@ -34,6 +34,7 @@
         <button type="submit" [disabled]="!createNew.form.valid">+</button>
     </form>
 </div>
+
 <!--<button routerLink="/shoppingMall">Visit the Shopping Mall</button>-->
 <button routerLink="/userProfile" routerLinkActive="active">User Profile</button>
 <app-transfer-money [accounts]="fetchedAccounts" [accountIds]="fetchedAccIds" [acc]="selectedAccount"></app-transfer-money>
@@ -41,3 +42,4 @@
 <app-shopping-mall [acc]="selectedAccount"></app-shopping-mall>
 
 
+<button (click)="signout()">Sign Out</button>

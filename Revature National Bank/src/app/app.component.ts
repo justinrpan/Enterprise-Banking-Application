@@ -15,11 +15,4 @@ export class AppComponent {
   }
 
   constructor(private tokenStorage:TokenStorageService){}
-
-  signout(){
-    this.tokenStorage.signOut();
-    window.location.replace("");
-    
-  }
-
 }

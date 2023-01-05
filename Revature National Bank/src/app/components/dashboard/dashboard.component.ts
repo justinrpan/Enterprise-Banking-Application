@@ -41,4 +41,10 @@ export class DashboardComponent implements OnInit {
   onSelect(acc:Account):void{
     this.selectedAccount=acc;
   }
+
+  signout(){
+    this.tokenStorage.signOut();
+    window.location.replace("");
+  }
+
 }
