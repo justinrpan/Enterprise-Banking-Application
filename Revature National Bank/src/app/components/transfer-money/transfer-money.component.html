@@ -3,7 +3,7 @@
 
 
 <div class="transferform">
-    <h3>Transfer Money</h3>
+    <p id="header">Transfer Money</p>
     <form #tf = "ngForm" (ngSubmit)="onSubmit(tf.value, false)" name="form" novalidate>
     <label for="from">Transfer money from: </label>
     <select id="from" name = "from" required [(ngModel)]="transaction.from.id" #from="ngModel">

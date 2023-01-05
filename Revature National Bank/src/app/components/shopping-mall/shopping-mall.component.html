@@ -1,9 +1,10 @@
 <div *ngIf="acc">
-    <ul>
-        <li *ngFor="let shop of shops">
-            <button type="button" (click)="buy(shop)" #shop>{{shop.type}}</button>
-        </li>
-    </ul>
+    <br>
+    <br>
+    <br>
+    <div id="shopping" *ngFor="let shop of shops">
+        <button type="button" (click)="buy(shop)" #shop>{{shop.type}}</button>
+    </div>
     <div id="transactioncomplete"></div>
 </div>
 

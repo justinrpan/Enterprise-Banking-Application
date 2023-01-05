@@ -1,3 +1,14 @@
 .transactions {
     text-align: center;
+    font-size: 25px;
+}
+
+button {
+    border-radius: 20px;
+    color: white;
+    background-color: red;
+    height: 40px;
+    width: 200px;
+    font-family: Syne;
+    margin-top: 20px;
 }
