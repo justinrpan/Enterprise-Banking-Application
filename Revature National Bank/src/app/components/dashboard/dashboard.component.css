@@ -1,9 +1,68 @@
-
-
 .dashboardcontainer, .dashboardcontainer2 {
     text-align:center;
 }
 
 #appstatementsid {
     text-align: center;
+}
+
+#dashboardheader {
+    color: red;
+    text-align: center;
+    margin-top: 175px;
+    font-size: 40px;
+}
+
+#signoutbutton {
+    position: absolute;
+    top: 20px;
+    right: 408px;
+    text-decoration: none;
+    color: black;
+  }
+
+  #userprofilebutton {
+    position: absolute;
+    top: 20px;
+    right: 225px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .dashboardcontainer2 {
+    border-radius:35px;
+    display:inline-block;
+    overflow:hidden;
+    border:2px solid red;
+  }
+
+   select {
+    width:160px;
+    height:40px;
+    border:2px;
+    border-color: red;
+    background-color: #e7e6e7;
+    font-family: Syne;
+    font-size: 10px;
+    
+  }
+
+  #createaccount {
+    border-radius: 20px;
+    color: white;
+    background-color: red;
+    height: 40px;
+    width: 40px;
+  }
+
+#loadaccounts {
+    border-radius: 20px;
+    color: white;
+    background-color: red;
+    height: 40px;
+    width: 200px;
+    font-family: Syne;
+    position: absolute;
+    top: 320px;
+    left: 10px;
 }

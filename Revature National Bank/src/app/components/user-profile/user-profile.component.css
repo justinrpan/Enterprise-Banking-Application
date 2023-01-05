@@ -1,5 +1,87 @@
 .profilepage {
+    border: 3px solid #0040ff;
+    border-radius: 35px;
+    background-color: white;
+    width: 450px;
+    height: 600px;
+    position: absolute;
+    top: 220px;
+    right: 475px;
+}
+
+#form-control {
+    display: block;
+    margin-top: 8px;
+    border-radius: 35px;
+    background-color: #e7e6e7;
+    border: 2px solid black;
+    height: 20px;
+    width: 350px;
+}
+
+label {
+    font-size: 22px;
+}
+
+#savebutton {
+    border: 2px solid black;
+    border-radius: 35px;
+    background-color: red;
+    width: 170px;
+    height: 20px;
+    font-family: Syne;
+    line-height: 0;
+}
+
+.savebutton {
     text-align: center;
+}
+
+#dashboardbutton {
+    border: 2px solid black;
+    border-radius: 35px;
+    background-color: red;
+    width: 220px;
+    height: 20px;
+    font-family: Syne;
+    line-height: 0;
+    margin-top: 2px;
+}
+
+.dashboardbutton {
+    text-align: center;
+}
+
+.form-header {
+    font-size: 30px;
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom: -10px;
+}
+
+.firstName {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.lastName {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.email {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.password {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.phoneNumber {
+    margin-bottom: 3px;
+    margin-left: 10px;
 }
 
 #savebutton {
@@ -17,4 +99,14 @@ label {
 
 h1 {
     font-size: 45px;
+}
+
+#loadinfo {
+    text-decoration: none;
+}
+
+#changessaved {
+    position: absolute;
+    left: 80px;
+    top: 500px;
 }

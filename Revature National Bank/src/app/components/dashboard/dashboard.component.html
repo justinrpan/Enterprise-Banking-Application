@@ -1,14 +1,3 @@
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<button type="button" (click)="getAccounts()">Load  Accounts</button>
-<div *ngIf="fetchedAccounts">
 <div class="dashboardcontainer" *ngIf="fetchedAccounts">
     <h1 id="dashboardheader">Dashboard</h1>
     <ul>
@@ -25,21 +14,21 @@
     </ul>
 </div>
 
+<button id="loadaccounts" type="button" (click)="getAccounts()">Load Accounts</button>
+
 <div class="dashboardcontainer2">
     <form #createNew="ngForm" (ngSubmit)="onSubmit(type.value)">
         <select required id="type" name = "type" #type>
-            <option value="" disabled selected>Type of account:</option>
+            <option value="" disabled selected>Type of account</option>
             <option *ngFor="let choice of choices" value={{choice}}>{{choice}}</option>
         </select>
-        <button type="submit" [disabled]="!createNew.form.valid">+</button>
+        <button id="createaccount" type="submit" [disabled]="!createNew.form.valid">+</button>
     </form>
 </div>
 
-<!--<button routerLink="/shoppingMall">Visit the Shopping Mall</button>-->
-<button routerLink="/userProfile" routerLinkActive="active">User Profile</button>
 <app-transfer-money [accounts]="fetchedAccounts" [accountIds]="fetchedAccIds" [acc]="selectedAccount"></app-transfer-money>
 <app-statements [acc]="selectedAccount" [allAccounts]="fetchedAllAccIds"></app-statements>
 <app-shopping-mall [acc]="selectedAccount"></app-shopping-mall>
 
-
-<button (click)="signout()">Sign Out</button>
+<a href='#' id="signoutbutton" (click)="$event.preventDefault(); signout()">Sign Out</a>
+<a href='#' id="userprofilebutton" routerLink="/userProfile" routerLinkActive="active">User Profile</a>

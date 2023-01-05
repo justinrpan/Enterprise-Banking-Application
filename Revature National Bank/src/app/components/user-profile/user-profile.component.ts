@@ -29,7 +29,7 @@ export class UserProfileComponent implements OnInit {
         user => 
           this.newUserInfo = user);
     
-    document.getElementById('changessaved!').innerHTML = 'Changes Saved!';
+    document.getElementById('changessaved').innerHTML = 'Changes Saved!';
   }
 
 }
