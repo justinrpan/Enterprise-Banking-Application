@@ -32,6 +32,8 @@ export class LoginComponent implements OnInit {
         this.authR = data
     );
     setTimeout(()=>this.switchScreen(this.authR),900);
+
+    this.router.navigate(['/dashboard']);
   }
 
   switchScreen(authRes:AuthReponse) {
